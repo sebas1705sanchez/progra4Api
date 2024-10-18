@@ -16,13 +16,13 @@
 
                     <!-- Mostrar información de la categoría -->
                     <p>Categoría: {{ $product['category']['name'] }}</p>
-                    <img src="{{ $product['category']['image'] }}" alt="{{ $product['category']['name'] }}" width="100">
+                    <img src='{{ $product['category']['image'] }}' alt="{{ $product['category']['name'] }}" width="100">
 
                     <!-- Mostrar imágenes del producto -->
                     <div>
                         <h3>Imágenes del Producto:</h3>
                         @foreach($product['images'] as $image)
-                            <img src="{{ $image }}" alt="{{ $product['title'] }}" width="150" style="margin-right: 10px;">
+                            <img src='{{ $image }}' alt="{{ $product['title'] }}" width="150" style="margin-right: 10px;">
                         @endforeach
                     </div>
                 </li>

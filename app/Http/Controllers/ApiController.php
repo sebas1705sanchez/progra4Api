@@ -16,7 +16,7 @@ class ApiController extends Controller
 
     public function products() {
         $products = $this->apiService->getProducts();
-        return view('api.products', compact('products'));
+        return view('api.products', ['products' => $products]);
     }
 
     public function categories() {
